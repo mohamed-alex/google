@@ -1,0 +1,183 @@
+body{
+	box-sizing: border-box;
+	height: 100%
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+body, td, a, p, .h {
+    font-family: arial,sans-serif;
+}
+/*start Header*/
+.header{
+	display: inline-flex;
+	height: 60px;
+	width: 100%;
+	justify-content:flex-end;
+	align-items: center;
+	margin-bottom: 20px
+		
+}
+.header a,
+.header .others,
+.header .signin{
+	text-decoration: none;	
+	margin:10px;
+	padding: 10px;
+	font-size: 13px
+}
+
+.header a .gmail:hover,
+.header a .images:hover,
+.header .others i:hover{
+	text-decoration: underline;
+	color:#6f6f6f
+}
+.header .signin{
+	width: 50px;
+	height: 12px;
+	background-color: #4285f4;
+	color:aliceblue;
+	text-align: center;
+	border-radius: 2px;
+	line-height: 12px;
+	font-weight: bold;
+	cursor: pointer
+}
+.header .others{
+	cursor: pointer
+}
+.header .others i{
+	font-size: 13px
+}
+.app-container{
+	position: absolute;
+	right:40px;
+	top:60px;
+	z-index: 5;
+	border:1px solid #f6f6f6;
+	border-radius: 10px;
+	overflow: scroll;
+	width: 330px;
+	height: 490px;
+		box-shadow: 0 0 10px #b5b3b3;
+}
+.google-apps1{
+	list-style: none;
+	margin: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	background-color: white;
+
+	text-align: center;
+}
+.google-apps2{
+	list-style: none;
+	margin: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	background-color: white;
+
+	text-align: center;
+}
+.app-container::-webkit-scrollbar{
+	width:10px;
+	
+}
+.app-container::-webkit-scrollbar-thumb{
+	border-radius: 10px;
+	background-color: #dbdbdb;
+
+}
+.app-container::-webkit-scrollbar-track{
+	box-shadow: inset 0 0 10px white;
+	border-radius: 10px;
+
+}
+
+.google-apps1 li,
+.google-apps2 li{
+	width: calc(105px - 24px);
+	height: 95px;
+	margin: 6px;
+	padding: 6px;
+	border-radius: 10px;
+	cursor: pointer;
+	padding: 5px;
+	
+}
+.google-apps1 li:hover,
+.google-apps2 li:hover{
+	background-color: #e8f0fe
+}
+.google-apps1 span,
+.google-apps2 span{
+	font-size: 14px;
+	color:black;
+	padding: 10px;
+	margin-bottom:10px
+	
+
+}
+.google-apps1 li img,
+.google-apps2 li img{
+	width: 60px;
+	height: 51.67px;
+	margin: 10px auto
+}
+hr{
+	height: .25px;
+	background-color: #ffffff
+	
+}
+.separator{
+	display: block;
+	height: 1px;
+	width: 330px;
+	background-color: #e6e6e6;		
+}
+.disappear{
+	display: none
+}
+/*End of header*/
+.m-container{
+	position: relative;
+	width:900px;
+	height:400px;
+	margin: 20px auto
+}
+.google-logo{
+	position: absolute;
+	top:60px;
+	left:50%;
+	transform: translateX(-50%)
+	
+
+	
+}
+.google-logo img{
+width: 100%
+	
+}
+.search{
+	position: absolute;
+	left: 50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+	
+
+}
+.search form input{
+	height:45px;
+	width:450px;
+	border: 1px solid black;
+	border-radius:25px;
+	outline: none;
+	padding: 10px;
+	line-height: 45px;
+	font-size: 16px
+
+}
