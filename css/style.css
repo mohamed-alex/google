@@ -62,9 +62,10 @@ body{
 	border:1px solid #f6f6f6;
 	border-radius: 10px;
 	overflow: scroll;
-	width: 330px;
+	width: 310px;
 	height: 490px;
 	box-shadow: 0 0 10px #b5b3b3;
+	background-color:white
 }
 .google-apps1{
 	width:290px;
@@ -103,14 +104,17 @@ body{
 
 .google-apps1 li,
 .google-apps2 li{
-	width: 68px;
-	height:68px;
+	min-width: 68px;
+	min-height:68px;
 	margin: 6px;
-	padding: 6px;
 	border-radius: 10px;
 	cursor: pointer;
 	padding: 5px;
 	
+}
+.google-apps1 li a,
+.google-apps2 li a{
+	text-decoration: none
 }
 .google-apps1 li:hover,
 .google-apps2 li:hover{
@@ -120,27 +124,28 @@ body{
 .google-apps2 span{
 	font-size: 14px;
 	color:black;
-	padding: 10px;
-	margin-bottom:10px
-	
-
+	padding: 4px;
+	margin-bottom:5px;
+	display: block;
 }
 .google-apps1 li img,
 .google-apps2 li img{
-	width: 51px;
-	height: 51px;
-	margin: 10px auto
+	width: 42px;
+	height: 40px;
+	margin: 5px auto
 }
 hr{
 	height: .25px;
-	background-color: #ffffff
+	background-color: #ffffff;
+	
 	
 }
 .separator{
 	display: block;
 	height: 1px;
 	width: 290px;
-	background-color: #e6e6e6;		
+	background-color: #e6e6e6;
+	z-index:10
 }
 .disappear{
 	display: none
