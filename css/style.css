@@ -6,7 +6,7 @@ body{
 	margin: 0;
 	padding: 0;
 }
-body, td, a, p, .h {
+* {
     font-family: arial,sans-serif;
 }
 /*start Header*/
@@ -23,11 +23,13 @@ body, td, a, p, .h {
 .header .others,
 .header .signin{
 	text-decoration: none;	
-	margin:10px;
-	padding: 10px;
+	
+	padding: 8px;
 	font-size: 13px
 }
-
+.header .signin{
+	margin-right: 25px
+}
 .header a .gmail:hover,
 .header a .images:hover,
 .header .others i:hover{
@@ -49,8 +51,9 @@ body, td, a, p, .h {
 	cursor: pointer
 }
 .header .others i{
-	font-size: 13px
+	font-size: 15px
 }
+/*start of app list*/
 .app-container{
 	position: absolute;
 	right:40px;
@@ -61,30 +64,30 @@ body, td, a, p, .h {
 	overflow: scroll;
 	width: 330px;
 	height: 490px;
-		box-shadow: 0 0 10px #b5b3b3;
+	box-shadow: 0 0 10px #b5b3b3;
 }
 .google-apps1{
+	width:290px;
 	list-style: none;
-	margin: none;
+	margin:10px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: flex-start;
 	background-color: white;
-
 	text-align: center;
 }
 .google-apps2{
+	width:290px;
 	list-style: none;
-	margin: none;
+	margin:10px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: flex-start;
 	background-color: white;
-
 	text-align: center;
 }
 .app-container::-webkit-scrollbar{
-	width:10px;
+	width:8px;
 	
 }
 .app-container::-webkit-scrollbar-thumb{
@@ -100,8 +103,8 @@ body, td, a, p, .h {
 
 .google-apps1 li,
 .google-apps2 li{
-	width: calc(105px - 24px);
-	height: 95px;
+	width: 68px;
+	height:68px;
 	margin: 6px;
 	padding: 6px;
 	border-radius: 10px;
@@ -124,8 +127,8 @@ body, td, a, p, .h {
 }
 .google-apps1 li img,
 .google-apps2 li img{
-	width: 60px;
-	height: 51.67px;
+	width: 51px;
+	height: 51px;
 	margin: 10px auto
 }
 hr{
@@ -136,18 +139,20 @@ hr{
 .separator{
 	display: block;
 	height: 1px;
-	width: 330px;
+	width: 290px;
 	background-color: #e6e6e6;		
 }
 .disappear{
 	display: none
 }
+/*end of app list*/
 /*End of header*/
 .m-container{
 	position: relative;
-	width:900px;
-	height:400px;
-	margin: 20px auto
+	width:80%;
+	height:430px;
+	margin: 20px auto;
+
 }
 .google-logo{
 	position: absolute;
@@ -158,26 +163,140 @@ hr{
 
 	
 }
-.google-logo img{
-width: 100%
+.m-container .google-logo img{
+	width: 100%
 	
 }
-.search{
+.m-container .search{
 	position: absolute;
 	left: 50%;
 	top:50%;
 	transform: translate(-50%,-50%);
-	
-
-}
-.search form input{
 	height:45px;
 	width:450px;
-	border: 1px solid black;
+	border: 1px solid #e3e3e3;
+	border-radius:25px;
+}
+.form{
+	display: flex;
+	justify-items: center;
+
+}
+.m-container .search i{
+	margin-left:15px;
+	color:#9aa0a6;
+	font-size: 13px;
+	line-height: 45px;
+	cursor: pointer
+	
+}
+.m-container .search form input{
+	height:45px;
+	width:350px;
+	border:none;
 	border-radius:25px;
 	outline: none;
 	padding: 10px;
 	line-height: 45px;
-	font-size: 16px
+	font-size: 16px;
+	margin: 0px 14px;
+
+	
+}
+.m-container .search img{
+	width: 30px;
+	margin-right: 10px;
+	display: inline;
+	cursor: pointer
+		
+}
+.btn-container{
+	position: relative;
+	left:50%;
+	top:65%;
+	width: 80%;
+	display: flex;
+	justify-content: center;
+	transform: translateX(-50%)
+}
+@media (max-width:){
+	
+}
+.m-container .search:hover{
+	box-shadow: 0 0 5px #cccccc
+}
+.m-container .btn-container .btn{
+	background-color:#f8f9fa; 
+	min-width:25%;
+	height: 36px;
+	padding:0 2%;
+	border: none;
+	font-size: 15px;
+	color:#3c4043;
+	text-align: center;
+	cursor: pointer;
+	border-radius: 4px;
+	outline: none;
+	
+	
+}
+.m-container .btn:hover{
+	border:1px solid #cccccc;
+	
+}
+.m-container .btn:active {
+	border:1px solid #4d90fe;
 
 }
+.btn1{
+	margin-right: 1%
+}
+.btn2{
+	margin-left: 1%
+}
+
+.clear-fix{
+	clear: both
+}
+/*start of footer*/
+.footer{
+	background-color: #eee
+}
+.footer .footer-country,
+.footer .footer-options{
+	border-top:1px solid #d6d6d6;
+	border-bottom:1px solid #d6d6d6;
+	padding: 5px;
+	color:rgba(0,0,0,.54);
+	font-size: 14px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 15px;
+	
+}
+.footer .footer-options .left{
+	float:left;
+
+}
+.footer .footer-country span,
+.footer .footer-options .left span,
+.footer .footer-options .right span{
+	padding-left: 27px;
+	cursor: pointer
+}
+.footer .footer-country span:active,
+.footer .footer-options .left span:active,
+.footer .footer-options .right span:active{
+	color:red
+}
+.footer .footer-country span:hover,
+.footer .footer-options .left span:hover,
+.footer .footer-options .right span:hover{
+	text-decoration: underline
+}
+.footer .footer-options .right{
+	float: right;
+	margin-right: 30px
+	
+}
+/*end of footer*/

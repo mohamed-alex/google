@@ -15,11 +15,11 @@ window.onclick = function(){
 document.addEventListener("click", function(ev){
 	
 	console.log(ev.target.className);
-	if (ev.target.tagName == "I"){
+	if (ev.target.classList.contains("others")){
 		
 		apps.classList.toggle("disappear");
 		
-		}else if (ev.target.tagName !== "I"){
+		}else if (!ev.target.classList.contains("others")){
 			
 			apps.classList.add("disappear")
 		}
