@@ -1,15 +1,5 @@
 var others = document.querySelector(".others");
 var apps = document.querySelector(".app-container");
-var i;
-/*others.onclick = function(){
-apps.classList.toggle("disappear")
-	
-}
-window.onclick = function(){
-	
-	apps.classList.toggle("disappear")
-
-}*/
 
 
 document.addEventListener("click", function(ev){
